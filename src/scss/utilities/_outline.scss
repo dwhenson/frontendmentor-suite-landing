@@ -1,0 +1,11 @@
+/* Add styled focus states on tab not hover */
+
+:focus-visible {
+  opacity: 1 !important;
+  outline: 4px solid var(--clr-primary-400);
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: transparent;
+}

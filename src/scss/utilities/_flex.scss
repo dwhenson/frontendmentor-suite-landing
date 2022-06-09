@@ -1,0 +1,10 @@
+/* Flex default styles  */
+
+.flex {
+  display: flex;
+  gap: var(--bespoke-gap, var(--space-s));
+
+  > * {
+    flex: 1 1 var(--min, var(--space-s));
+  }
+}
