@@ -5,18 +5,18 @@
 Composition
 ================================================== */
 
-@use "composition/global";
-@use "utilities/flex";
+@use "composition/box";
+@use "composition/center";
+@use "composition/flow-content";
+@use "composition/flow-section";
+@use "composition/sidebar";
+@use "composition/switcher";
 
 /* ==================================================
 Utilities
 ================================================== */
 
 @use "utilities/box-shadow";
-@use "utilities/container";
-@use "utilities/flow-content";
-@use "utilities/flow-section";
-@use "utilities/full-bleed";
 @use "utilities/skip-link";
 @use "utilities/visually-hidden";
 
@@ -24,12 +24,12 @@ Utilities
 Blocks
 ================================================== */
 
-@use "blocks/hero";
-@use "blocks/features";
-@use "blocks/header";
-@use "blocks/numbers";
-@use "blocks/footer";
-@use "blocks/button";
+// @use "blocks/hero";
+// @use "blocks/features";
+// @use "blocks/header";
+// @use "blocks/numbers";
+// @use "blocks/footer";
+// @use "blocks/button";
 
 /* ==================================================
   Global Styles

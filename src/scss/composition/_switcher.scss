@@ -1,0 +1,11 @@
+/* Flex default styles  */
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--bespoke-gap, var(--space-s, 1rem));
+}
+
+.switcher > * {
+  flex-basis: calc((var(--threshold, 50%) - 100%) * 999);
+  flex-grow: 1;
+}
