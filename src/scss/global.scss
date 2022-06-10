@@ -1,28 +1,24 @@
 @use "reset";
-
-/* ==================================================
-  Global Styles
-  ================================================== */
-
 @use "abstracts/variables";
-// @use "abstracts/breakpoints";
 
 /* ==================================================
 Composition
 ================================================== */
 
-@use "composition/align-content";
+@use "composition/global";
+@use "utilities/flex";
 
 /* ==================================================
 Utilities
 ================================================== */
 
+@use "utilities/box-shadow";
 @use "utilities/container";
 @use "utilities/flow-content";
 @use "utilities/flow-section";
-@use "utilities/outline";
-@use "utilities/split";
 @use "utilities/full-bleed";
+@use "utilities/skip-link";
+@use "utilities/visually-hidden";
 
 /* ==================================================
 Blocks
@@ -35,10 +31,13 @@ Blocks
 @use "blocks/footer";
 @use "blocks/button";
 
-/* Base Styles
+/* ==================================================
+  Global Styles
 ================================================== */
+
 body {
   --flow-section: var(--flow-l);
+
   overflow-x: hidden;
   background-color: var(--clr-secondary-100);
   font-family: var(--ff-body);
@@ -64,4 +63,14 @@ h2 {
 
 p {
   color: var(--clr-primary-300);
+}
+
+:focus-visible {
+  opacity: 1 !important;
+  outline: 4px solid var(--clr-primary-400);
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: transparent;
 }

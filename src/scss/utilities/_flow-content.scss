@@ -1,4 +1,4 @@
 /* Add vertical rhythm inside elements */
 .flow-content > * + * {
-  margin-block-start: var(--flow-s, var(--space-xs));
+  margin-block-start: var(--flow-space, var(--space-xs, 1em));
 }

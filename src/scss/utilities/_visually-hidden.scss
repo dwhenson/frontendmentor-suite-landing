@@ -3,11 +3,11 @@
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
-  block-size: 1px;
+  block-size: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
-  margin: -1px;
+  margin: 0;
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
