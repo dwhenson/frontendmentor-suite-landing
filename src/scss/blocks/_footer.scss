@@ -1,43 +1,27 @@
-@use "../abstracts/breakpoints" as *;
+// FIXME adjust logo at small screens
 
 .footer {
-  --container-max: min(100%, 75rem);
-  position: relative;
+  --padding-block-start: calc(var(--space-xxl) * 4);
+
   grid-column: 1 / -1;
-  padding-block: var(--space-xl);
-  background-color: var(--clr-primary-100);
+  padding-block-start: var(--padding-block-start);
+  padding-block-end: var(--space-xxl);
+  margin-block-start: calc(var(--padding-block-start) * -0.5);
+  background-color: var(--clr-neutral-200);
 
-  &::before {
-    content: " ";
-    position: absolute;
-    display: block;
-    opacity: 0.05;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    background-image: url("../images/tablet/image-footer.jpg");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  .switcher {
+    --min-basis: 30rem;
+    --bespoke-gap: var(--space-m);
 
-  :is(h2, p) {
-    font-weight: 900;
-    color: var(--clr-secondary-100);
-
-    @include respond-to("large") {
-      text-align: start;
-    }
-  }
-
-  .text {
-    --bespoke-gap: var(--space-l);
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    > * {
-      flex-basis: min(100%, 15rem);
-    }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-s);
   }
 }

@@ -5,6 +5,8 @@
   --padding-inline: var(--space-l);
   --padding-block: var(--space-xl);
 
+  position: relative;
+  z-index: 10;
   align-items: center;
   justify-content: center;
   margin-block-start: calc(var(--space-xxl) * 5);

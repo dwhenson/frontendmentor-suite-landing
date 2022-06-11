@@ -5,11 +5,9 @@
   --container-max: 1440px;
 
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-rows: auto 1fr auto;
   grid-template-columns:
     minmax(var(--min, 1rem), 1fr)
-    minmax(calc(100vw - calc(var(--min) * 2)), var(--container-max, 100%))
+    minmax(320px, 1440px)
     minmax(var(--min, 1rem), 1fr);
 
   > * {
