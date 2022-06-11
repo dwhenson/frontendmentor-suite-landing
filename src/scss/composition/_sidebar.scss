@@ -6,7 +6,7 @@
   gap: var(--bespoke-gap, var(--space-s, 1rem));
 
   > :first-child {
-    flex-basis: var(--first-child-basis, 30%);
+    flex-basis: var(--first-child-basis, 50%);
     flex-grow: var(--first-child-grow, 1);
     min-inline-size: var(--first-child-min-size, auto);
   }

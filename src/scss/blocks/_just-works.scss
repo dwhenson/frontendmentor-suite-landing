@@ -1,0 +1,25 @@
+.just-works {
+  --bespoke-gap: var(--space-xxl);
+  --flow-space: var(--space-l);
+  --min-basis: 40rem;
+  --padding-inline: var(--space-l);
+  --padding-block: var(--space-xl);
+
+  align-items: center;
+  justify-content: center;
+  margin-block-start: calc(var(--space-xxl) * 5);
+
+  .image-wrapper {
+    position: relative;
+    display: grid;
+    place-items: center;
+    align-self: flex-end;
+    margin-block-end: calc(var(--padding-block) * -1);
+
+    // FIXME sort out image position
+    img {
+      position: absolute;
+      inset-block-end: 0;
+    }
+  }
+}
