@@ -1,13 +1,14 @@
 /* Add basic box layout and colors */
 .box {
-  --color-light: var(--clr-neutral-100);
-  --color-dark: var(--clr-neutral-400);
+  --color-bg: var(--clr-neutral-100);
+  --color-fg: var(--clr-neutral-400);
 
   padding-block: var(--padding-block, var(--space-xs, 1rem));
   padding-inline: var(--padding-inline, var(--space-s, 1.5rem));
   border: 2px solid;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  border-radius: var(--radius, 1em);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
 }
 
 .box * {

@@ -1,18 +1,13 @@
-.primary-100 {
+.button {
+  --radius: 0.5em;
+  --shadow-color: var(--clr-neutral-300);
+
   position: relative;
-  display: block;
-  min-inline-size: fit-content;
   max-inline-size: fit-content;
-  padding-block: calc(var(--space-xxs));
-  padding-inline: var(--space-s);
-  border: 0;
-  border-radius: 99999px;
   box-shadow: var(--shadow-elevation-low);
-  background-color: var(--clr-bg, var(--clr-primary-100));
   transition: background-color 300ms ease-in-out;
-  font-weight: 900;
+  text-align: center;
   text-decoration: none;
-  color: var(--clr-secondary-100);
 
   &::after {
     content: "";
@@ -22,7 +17,7 @@
     inset-inline-start: 0;
     inline-size: 100%;
     block-size: 100%;
-    border-radius: 99999px;
+    border-radius: var(--radius);
     box-shadow: var(--shadow-elevation-medium);
     transition: opacity 300ms ease-in-out;
   }
@@ -31,17 +26,14 @@
   &:hover::after {
     opacity: 1;
   }
+}
 
-  &:is(:hover, :focus) {
-    --clr-bg: var(--clr-secondary-200);
-    cursor: pointer;
-  }
+.button:hover {
+  border-color: var(--color-fg);
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+}
 
-  &.primary-200 {
-    --clr-bg: var(--clr-primary-200);
-
-    &:is(:hover, :focus) {
-      --clr-bg: var(--clr-secondary-300);
-    }
-  }
+.button:hover[data-state="dark"] {
+  background-color: red;
 }

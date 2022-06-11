@@ -17,12 +17,3 @@
     min-inline-size: var(--last-child-min-size, 50%);
   }
 }
-
-.with-sidebar[data-state="reversed"] {
-  --first-child-basis: 0;
-  --first-child-grow: 999;
-  --first-child-min-size: 50%;
-  --last-child-basis: 20rem;
-  --last-child-grow: 1;
-  --last-child-min-size: auto;
-}

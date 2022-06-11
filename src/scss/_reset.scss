@@ -76,8 +76,8 @@ img[width][height] {
 
 /* Let SVG scale without boundaries */
 img[src$=".svg"] {
-  inline-size: 100%;
   block-size: auto;
+  max-inline-size: 100%;
   max-inline-size: none;
 }
 
