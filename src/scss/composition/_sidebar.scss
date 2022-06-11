@@ -3,7 +3,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-s);
+  gap: var(--bespoke-gap, var(--space-s, 1rem));
 
   > :first-child {
     flex-basis: var(--first-child-basis, 30%);
