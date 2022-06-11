@@ -30,21 +30,17 @@ button {
 
 /* Adjust line heights */
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3,
-h4,
-.h4 {
+h4 {
   line-height: 1.1;
 }
 
 /* Remove list styles on ul, ol elements with a class */
 :where(ul[role="list"]),
 :where(ol[role="list"]) {
-  list-style-type: none;
   padding-inline: 0;
+  list-style-type: none;
 }
 
 /* Set core body defaults */

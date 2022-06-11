@@ -1,0 +1,18 @@
+/* Layout overall page */
+
+.align-content {
+  --min: var(--space-m);
+  --container-max: 1440px;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns:
+    minmax(var(--min, 1rem), 1fr)
+    minmax(calc(100vw - calc(var(--min) * 2)), var(--container-max, 100%))
+    minmax(var(--min, 1rem), 1fr);
+
+  > * {
+    grid-column: 2;
+  }
+}

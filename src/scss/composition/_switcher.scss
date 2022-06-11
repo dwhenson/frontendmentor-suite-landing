@@ -6,6 +6,6 @@
 }
 
 .switcher > * {
-  flex-basis: calc((var(--threshold, 50%) - 100%) * 999);
+  flex-basis: calc((var(--min-basis, 50%) - 100%) * 999);
   flex-grow: 1;
 }

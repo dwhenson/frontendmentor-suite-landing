@@ -1,8 +1,0 @@
-/* Center element horizontally */
-.center {
-  position: relative;
-  box-sizing: content-box;
-  inline-size: min(100%, var(--container-max, 100%));
-  padding-inline: var(--padding-inline, var(--space-s), 1rem);
-  margin-inline: auto;
-}

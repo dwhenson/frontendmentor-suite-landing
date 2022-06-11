@@ -1,16 +1,28 @@
 .with-sidebar {
+  --first-child-basis: 20rem;
+
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-s);
+
+  > :first-child {
+    flex-basis: var(--first-child-basis, 30%);
+    flex-grow: var(--first-child-grow, 1);
+    min-inline-size: var(--first-child-min-size, auto);
+  }
+
+  > :last-child {
+    flex-basis: var(--last-child-basis, 0);
+    flex-grow: var(--last-child-grow, 999);
+    min-inline-size: var(--last-child-min-size, 50%);
+  }
 }
 
-.with-sidebar > :last-child {
-  flex-basis: 10rem;
-  flex-grow: 1;
-}
-
-.with-sidebar > :first-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: 50%;
+.with-sidebar[data-state="reversed"] {
+  --first-child-basis: 0;
+  --first-child-grow: 999;
+  --first-child-min-size: 50%;
+  --last-child-basis: 20rem;
+  --last-child-grow: 1;
+  --last-child-min-size: auto;
 }

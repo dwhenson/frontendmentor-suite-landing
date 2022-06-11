@@ -6,7 +6,7 @@ Composition
 ================================================== */
 
 @use "composition/box";
-@use "composition/center";
+@use "composition/container";
 @use "composition/flow-content";
 @use "composition/flow-section";
 @use "composition/sidebar";
@@ -17,52 +17,50 @@ Utilities
 ================================================== */
 
 @use "utilities/box-shadow";
+@use "utilities/color-dark";
+@use "utilities/font-large";
 @use "utilities/skip-link";
 @use "utilities/visually-hidden";
+@use "utilities/uppercase";
+@use "utilities/weight-bold";
 
 /* ==================================================
 Blocks
 ================================================== */
 
-// @use "blocks/hero";
-// @use "blocks/features";
-// @use "blocks/header";
-// @use "blocks/numbers";
-// @use "blocks/footer";
-// @use "blocks/button";
-
-/* ==================================================
-  Global Styles
+/*  ==================================================
+Exceptions
 ================================================== */
+
+@use "exceptions/box-dark";
+@use "exceptions/box-gradient";
 
 body {
   --flow-section: var(--flow-l);
 
-  overflow-x: hidden;
-  background-color: var(--clr-secondary-100);
+  background-color: var(--clr-neutral-100);
   font-family: var(--ff-body);
   font-size: var(--step-0);
-  text-align: center;
-}
-
-main {
-  --flow-section: var(--flow-s);
+  color: var(--clr-neutral-300);
 }
 
 :is(h1, h2) {
-  color: var(--clr-primary-400);
+  font-weight: 400;
+  color: var(--clr-neutral-400);
 }
 
 h1 {
-  font-size: var(--step-4);
+  font-size: var(--step-6);
+  letter-spacing: -1px;
 }
 
 h2 {
-  font-size: var(--step-3);
+  font-size: var(--step-4);
+  letter-spacing: -0.5px;
 }
 
 p {
-  color: var(--clr-primary-300);
+  max-inline-size: 40ch;
 }
 
 :focus-visible {
