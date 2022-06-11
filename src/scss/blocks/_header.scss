@@ -1,6 +1,6 @@
 .header {
-  .logo {
-    inline-size: 12rem;
-    padding: var(--space-s);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-s);
 }
