@@ -34,6 +34,7 @@
   --step-6: clamp(3.36rem, calc(2.86rem + 2.12vw), 4.77rem);
 
   /* Box shadow */
+  --shadow-color: 219, 43%, 16%;
   /* prettier-ignore */
   --shadow-elevation-low:
     0.3px 0.5px 0.8px hsl(var(--shadow-color, 7, 0%, 14%), 0.14),

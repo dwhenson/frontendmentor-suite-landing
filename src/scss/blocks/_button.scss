@@ -1,11 +1,11 @@
 .button {
   --radius: 0.5em;
-  --shadow-color: var(--clr-neutral-300);
+  // --shadow-color: var(--clr-primary-300);
 
   position: relative;
   max-inline-size: fit-content;
   box-shadow: var(--shadow-elevation-low);
-  transition: background-color 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
   text-align: center;
   text-decoration: none;
 
@@ -29,12 +29,16 @@
 }
 
 .button:hover {
-  border-color: var(--color-fg);
   background-color: var(--color-fg);
   color: var(--color-bg);
 }
 
-// TODO sort out gradient
 .button:hover[data-state="dark"] {
-  background-color: red;
+  border-color: var(--clr-primary-100);
+  background: linear-gradient(
+    135deg,
+    var(--clr-primary-100),
+    var(--clr-primary-200),
+    var(--clr-primary-300)
+  );
 }

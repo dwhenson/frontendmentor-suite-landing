@@ -1,8 +1,12 @@
-.with-sidebar[data-state="reversed"] {
+.sidebar-wrapper[data-state="reversed"] {
+  // Main content
   --first-child-basis: 0;
   --first-child-grow: 999;
   --first-child-min-size: 65%;
+  // Sidebar
   --last-child-basis: 20rem;
   --last-child-grow: 1;
   --last-child-min-size: auto;
 }
+
+

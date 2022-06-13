@@ -1,4 +1,4 @@
-.with-sidebar {
+.sidebar-wrapper {
   --first-child-basis: 20rem;
 
   display: flex;
@@ -6,14 +6,19 @@
   gap: var(--bespoke-gap, var(--space-s, 1rem));
 
   > :first-child {
-    flex-basis: var(--first-child-basis, 50%);
+    // Sidebar
+    flex-basis: var(--first-child-basis, 30rem);
     flex-grow: var(--first-child-grow, 1);
     min-inline-size: var(--first-child-min-size, auto);
   }
 
   > :last-child {
+    // Main content
     flex-basis: var(--last-child-basis, 0);
     flex-grow: var(--last-child-grow, 999);
     min-inline-size: var(--last-child-min-size, 50%);
   }
 }
+
+
+
