@@ -4,4 +4,13 @@
   &.has-sidebar-reverse {
     min-inline-size: 70%;
   }
+
+  picture {
+    display: flex;
+  }
+
+  picture img {
+    inline-size: 100%;
+    object-fit: cover;
+  }
 }
