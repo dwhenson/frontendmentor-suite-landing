@@ -1,14 +1,7 @@
 .intro {
-  // FIXME sort image positioning
-
   --flow-space: var(--space-xl);
-  --first-child-basis: 0;
-  --first-child-grow: 999;
-  --first-child-min-size: 50%;
-  --last-child-basis: 25rem;
-  --last-child-grow: 1;
-  --last-child-min-size: auto;
 
-  align-items: center;
-  justify-content: space-evenly;
+  &.has-sidebar-reverse {
+    min-inline-size: 70%;
+  }
 }

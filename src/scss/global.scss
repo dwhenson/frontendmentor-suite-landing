@@ -9,6 +9,7 @@ Composition
 @use "composition/box";
 @use "composition/flow-content";
 @use "composition/flow-section";
+@use "composition/reverse-sidebar";
 @use "composition/sidebar";
 @use "composition/switcher";
 
@@ -40,7 +41,6 @@ Exceptions
 ================================================== */
 
 @use "exceptions/box-dark";
-@use "exceptions/reverse-sidebar";
 
 /* ==================================================
 Global Styles
