@@ -9,7 +9,7 @@
   z-index: 10;
   align-items: center;
   justify-content: center;
-  margin-block-start: calc(var(--space-xxl) * 5);
+  margin-block-start: min(calc(var(--space-xxl) * 5), 50vw);
 
   .image-wrapper {
     position: relative;
@@ -18,7 +18,6 @@
     align-self: flex-end;
     margin-block-end: calc(var(--padding-block) * -1);
 
-    // FIXME sort out image position
     img {
       position: absolute;
       inset-block-end: 0;

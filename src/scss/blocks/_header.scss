@@ -1,6 +1,8 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
+  gap: var(--space-s);
   padding-block: var(--space-l);
 }
