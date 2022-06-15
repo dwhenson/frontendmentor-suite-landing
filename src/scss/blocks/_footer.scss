@@ -10,8 +10,8 @@
   background-color: var(--clr-neutral-200);
 
   .switcher {
-    --min-basis: 50%;
-    --bespoke-gap: var(--space-m);
+    --min-basis: 35rem;
+    --bespoke-gap: var(--space-xl);
 
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@
   .socials {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: var(--space-s);
   }
 }

@@ -6,10 +6,10 @@
   --padding-block: var(--space-xl);
 
   position: relative;
-  z-index: 10;
+  z-index: 1;
   align-items: center;
   justify-content: center;
-  margin-block-start: min(calc(var(--space-xxl) * 5), 50vw);
+  margin-block-start: min(calc(var(--space-xl) * 6), 50vw);
 
   .image-wrapper {
     position: relative;
