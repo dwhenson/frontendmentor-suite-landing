@@ -1,5 +1,5 @@
 .testomonial {
-  --bespoke-gap: var(--space-xxl);
+  --bespoke-gap: var(--space-s);
   --flow-space: var(--space-l);
   --min-basis: 40rem;
   --padding-inline: var(--space-l);
@@ -21,6 +21,15 @@
     img {
       position: absolute;
       inset-block-end: 0;
+    }
+  }
+
+  .swoosh {
+    flex-grow: 0;
+    margin-block-start: calc(var(--padding-block) * 1);
+
+    img {
+      margin-inline: auto;
     }
   }
 }
