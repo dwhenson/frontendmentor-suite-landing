@@ -10,6 +10,19 @@
   align-items: center;
   justify-content: center;
   margin-block-start: min(calc(var(--space-xl) * 6), 60vw);
+  text-align: center;
+
+  @media (min-width: 775px) {
+    text-align: start;
+  }
+
+  .flow-content {
+    align-items: center;
+
+    @media (min-width: 775px) {
+      align-items: revert;
+    }
+  }
 
   .image-wrapper {
     position: relative;

@@ -1,11 +1,15 @@
 .hero {
-  --bespoke-gap: var(--space-l);
+  --bespoke-gap: var(--space-s);
 
   &.has-sidebar-reverse {
     min-inline-size: 70%;
   }
 
   picture {
-    // FIXME adjust position
+    z-index: -1;
+
+    @media (min-width: 775px) {
+      transform: translateX(calc(var(--space-xxl) * -1));
+    }
   }
 }
