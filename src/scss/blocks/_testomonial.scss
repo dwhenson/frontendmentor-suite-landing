@@ -9,7 +9,7 @@
   z-index: 1;
   align-items: center;
   justify-content: center;
-  margin-block-start: min(calc(var(--space-xl) * 6), 50vw);
+  margin-block-start: min(calc(var(--space-xl) * 6), 60vw);
 
   .image-wrapper {
     position: relative;
@@ -21,6 +21,11 @@
     img {
       position: absolute;
       inset-block-end: 0;
+      background: radial-gradient(
+        circle at 50% 75%,
+        hsla(292, 76%, 54%, 0.5) 10%,
+        transparent 40%
+      );
     }
   }
 
